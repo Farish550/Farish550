@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFood - Project Index</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+        
+        .description {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .link-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .link-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ff6b35;
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .instructions h2 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+        
+        .instructions ul {
+            padding-left: 1.5rem;
+        }
+        
+        footer {
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ EasyFood - Food Discovery Platform</h1>
+        <p class="description">A web-based platform to help tourists and locals find where to eat easily when traveling between cities or states</p>
+        
+        <div class="links">
+            <a href="src/index.html" class="link-card">
+                <h3>🏠 Home Page</h3>
+                <p>Main landing page with search functionality</p>
+            </a>
+            <a href="src/listings.html" class="link-card">
+                <h3>🍽️ Restaurants</h3>
+                <p>Restaurant listing and filtering page</p>
+            </a>
+            <a href="src/detail.html" class="link-card">
+                <h3>🔍 Restaurant Detail</h3>
+                <p>Example restaurant detail page</p>
+            </a>
+            <a href="src/about.html" class="link-card">
+                <h3>ℹ️ About</h3>
+                <p>Information about EasyFood</p>
+            </a>
+            <a href="src/contact.html" class="link-card">
+                <h3>📞 Contact</h3>
+                <p>Contact page with form</p>
+            </a>
+        </div>
+        
+        <div class="instructions">
+            <h2>📋 Project Information</h2>
+            <p>EasyFood is a frontend-focused food discovery platform that helps users find restaurants based on location, cuisine type, price range, and dietary preferences.</p>
+            
+            <h3>How to Use:</h3>
+            <ul>
+                <li>All HTML files are located in the <code>/src</code> directory</li>
+                <li>Open any HTML file directly in your browser to view the page</li>
+                <li>Run the development server with: <code>./start_server.sh</code> (requires Python)</li>
+                <li>Styles are in <code>/src/css/style.css</code></li>
+                <li>JavaScript is in <code>/src/js/main.js</code></li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>EasyFood - Find where to eat, easily. &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

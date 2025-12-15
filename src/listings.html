@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - EasyFood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>EasyFood</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Restaurants</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Discover Restaurants</h1>
+                <p>Find the perfect place to eat in your area</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <select id="filterLocation">
+                        <option value="">All Locations</option>
+                        <option value="kuala-lumpur">Kuala Lumpur</option>
+                        <option value="petaling-jaya">Petaling Jaya</option>
+                        <option value="selangor">Selangor</option>
+                        <option value="penang">Penang</option>
+                        <option value="johor-bahru">Johor Bahru</option>
+                    </select>
+                    <select id="filterCuisine">
+                        <option value="">All Cuisines</option>
+                        <option value="local">Local</option>
+                        <option value="western">Western</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="malay">Malay</option>
+                        <option value="indian">Indian</option>
+                        <option value="thai">Thai</option>
+                        <option value="italian">Italian</option>
+                    </select>
+                    <select id="filterPrice">
+                        <option value="">All Prices</option>
+                        <option value="low">Affordable (RM1-20)</option>
+                        <option value="medium">Moderate (RM21-50)</option>
+                        <option value="high">Expensive (RM51+)</option>
+                    </select>
+                    <select id="filterHalal">
+                        <option value="">All Types</option>
+                        <option value="halal">Halal Only</option>
+                        <option value="non-halal">Non-Halal</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurants-list">
+            <div class="container">
+                <div class="restaurant-grid">
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=1'">
+                        <img src="images/restaurant1.jpg" alt="Delicious Malaysian Kitchen">
+                        <div class="card-content">
+                            <h3>Delicious Malaysian Kitchen</h3>
+                            <p>Kuala Lumpur</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Local</span>
+                                <span class="tag price">RM20-40</span>
+                                <span class="tag halal">HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=2'">
+                        <img src="images/restaurant2.jpg" alt="Golden Dragon">
+                        <div class="card-content">
+                            <h3>Golden Dragon</h3>
+                            <p>Petaling Jaya</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Chinese</span>
+                                <span class="tag price">RM30-60</span>
+                                <span class="tag halal">HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=3'">
+                        <img src="images/restaurant3.jpg" alt="Burger Haven">
+                        <div class="card-content">
+                            <h3>Burger Haven</h3>
+                            <p>Selangor</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Western</span>
+                                <span class="tag price">RM25-50</span>
+                                <span class="tag halal">Non-HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=4'">
+                        <img src="images/restaurant4.jpg" alt="Spice Garden">
+                        <div class="card-content">
+                            <h3>Spice Garden</h3>
+                            <p>Kuala Lumpur</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Indian</span>
+                                <span class="tag price">RM35-70</span>
+                                <span class="tag halal">HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=5'">
+                        <img src="images/restaurant5.jpg" alt="La Bella Italia">
+                        <div class="card-content">
+                            <h3>La Bella Italia</h3>
+                            <p>Petaling Jaya</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Italian</span>
+                                <span class="tag price">RM50-100</span>
+                                <span class="tag halal">Non-HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card" onclick="window.location='detail.html?id=6'">
+                        <img src="images/restaurant6.jpg" alt="Sushi Master">
+                        <div class="card-content">
+                            <h3>Sushi Master</h3>
+                            <p>Kuala Lumpur</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Japanese</span>
+                                <span class="tag price">RM60-120</span>
+                                <span class="tag halal">Non-HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EasyFood. Discover great places to eat easily.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

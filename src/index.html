@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFood - Find where to eat, easily</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>EasyFood</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Restaurants</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>EasyFood – Find where to eat, easily.</h1>
+                <p>Discover the best restaurants in your city with our simple food discovery platform</p>
+                
+                <div class="search-container">
+                    <form id="searchForm">
+                        <div class="search-group">
+                            <input type="text" id="location" placeholder="Enter location (city/area)" required>
+                        </div>
+                        <div class="search-group">
+                            <select id="foodType">
+                                <option value="">All Cuisines</option>
+                                <option value="local">Local</option>
+                                <option value="western">Western</option>
+                                <option value="asian">Asian</option>
+                                <option value="halal">Halal</option>
+                                <option value="vegetarian">Vegetarian</option>
+                            </select>
+                        </div>
+                        <div class="search-group">
+                            <select id="priceRange">
+                                <option value="">Any Price Range</option>
+                                <option value="low">Affordable (RM1-20)</option>
+                                <option value="medium">Moderate (RM21-50)</option>
+                                <option value="high">Expensive (RM51+)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-search">Find Restaurants</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Food Places</h2>
+                <div class="restaurant-grid">
+                    <div class="restaurant-card">
+                        <img src="images/restaurant1.jpg" alt="Restaurant 1">
+                        <div class="card-content">
+                            <h3>Delicious Malaysian Kitchen</h3>
+                            <p>Kuala Lumpur</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Local</span>
+                                <span class="tag price">RM20-40</span>
+                                <span class="tag halal">HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <img src="images/restaurant2.jpg" alt="Restaurant 2">
+                        <div class="card-content">
+                            <h3>Golden Dragon</h3>
+                            <p>Petaling Jaya</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Chinese</span>
+                                <span class="tag price">RM30-60</span>
+                                <span class="tag halal">HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <img src="images/restaurant3.jpg" alt="Restaurant 3">
+                        <div class="card-content">
+                            <h3>Burger Haven</h3>
+                            <p>Selangor</p>
+                            <div class="tags">
+                                <span class="tag cuisine">Western</span>
+                                <span class="tag price">RM25-50</span>
+                                <span class="tag halal">Non-HALAL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EasyFood. Discover great places to eat easily.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
